@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+        <TableRow>
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_number" />
+            <EditText
+                android:id="@+id/editAcno"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+                <requestFocus />
+            </EditText>
+         </TableRow>
+
+         <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_number" />
+
+            <EditText
+                android:id="@+id/editCno"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+
+        </TableRow>
+        
+             
+<TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_holder_s" />
+
+            <EditText
+                android:id="@+id/editHolders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_weight="1"  >
+            </EditText>
+
+</TableRow>
+<TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_name" />
+
+            <EditText
+                android:id="@+id/editBankName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" >
+            </EditText>
+
+</TableRow>
+
+<TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/branch_name" />
+
+            <EditText
+                android:id="@+id/editBranchName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" >
+            </EditText>
+        </TableRow>
+<TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/branch_address" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:layout_weight="1"  />
+</TableRow>
+
+<TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ifsc" />
+
+            <EditText
+                android:id="@+id/editIFSC"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+    <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/micr" />
+
+            <EditText
+                android:id="@+id/editMICR"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+     </TableRow>
+
+     <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_balance" />
+
+            <EditText
+                android:id="@+id/editBalance"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" >
+            </EditText>
+   </TableRow>
+<TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remarks" />
+
+            <EditText
+                android:id="@+id/editRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="">
+            </EditText>
+</TableRow>
+<TableRow>
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addAccount"
+            android:text="@string/add_account" >
+        </Button>
+           
+</TableRow>
+</TableLayout>
+
+</ScrollView>

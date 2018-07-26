@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Accounts Tracker</string>
+    <string name="accountsprompt">Select Account</string>
+    <string name="balance">balance</string>
+    <string name="t1">-</string>
+    <string name="val">Detaifdsfsdf dsafsdfsdf sdf fdsaf safdsafdsls</string>
+    <string name="account">Account :</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="account_holder_s">Account Holder(s)</string>
+    <string name="account_number">Account Number</string>
+    <string name="add_account">Add Account</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="branch_address">Branch Address</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="customer_number">Customer Number</string>
+    <string name="ifsc">IFSC</string>
+    <string name="micr">MICR</string>
+    <string name="remarks">Remarks</string>
+
+</resources>

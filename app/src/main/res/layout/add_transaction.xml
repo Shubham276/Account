@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account" />
+
+            <Spinner
+                android:id="@+id/spinnerAccounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/accountsprompt" >
+            </Spinner>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioDeposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Deposit"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/radioWithdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Withdraw"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/textTransDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="sysdate"
+                    tools:ignore="HardcodedText" />
+
+                <ImageButton
+                    android:id="@+id/buttonDateDialog"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/datepicker"
+                    android:onClick="showDateDialog"
+                    tools:ignore="ContentDescription,RtlHardcoded">
+                </ImageButton>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount :"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/editTransAmount"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheque No."
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editChequeNo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheque Party :"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/editChequeParty"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="text" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheque Details :"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/editChequeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks "
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/editRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text" >
+
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:onClick="addTransaction"
+                android:text="@string/add_transaction" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
